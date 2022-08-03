@@ -1,7 +1,7 @@
 'use strict';
 // ! *********** FOR LESSONS NAMES *********** //
 // ? *********** FOR REGULAR COMMENTS *********** //
-const sounds = ['pepe', 'america', 'corito', 'demencia', 'sopa', 'vistima', 'wladi'];
+const sounds = ['sound-1', 'sound-2', 'sound-3', 'sound-4', 'sound-5', 'sound-6'];
 
 sounds.forEach(function (sound) {
   const btn = document.createElement('button');
