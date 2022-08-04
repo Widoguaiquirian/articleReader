@@ -164,6 +164,7 @@ article .author {
   font-weight: bold;
   letter-spacing: 1px;
   cursor: pointer;
+  width: 190px;
   margin: 1rem;
   text-align: center;
 }
@@ -171,7 +172,7 @@ article .author {
 .btn:active,
 .btn:focus,
 .btn:hover {
-  background-color: rgba(117, 9, 225, 0.877);
+  background-color: rgba(63, 0, 126, 0.877);
 }
 
 .article-text span {
