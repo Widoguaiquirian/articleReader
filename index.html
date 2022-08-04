@@ -15,24 +15,87 @@
     <script src="https://kit.fontawesome.com/18e45d357f.js" crossorigin="anonymous"></script>
 
     <!--GOOGLE FONTS - ROBOTO-->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font-family: 'Raleway', sans-serif; -->
 
     <!-- ? FOR REGULAR COMMENTS -->
   </head>
   <body>
-    <audio id="sound-1" src="_content/sound-1.mp3"></audio>
-    <audio id="sound-2" src="_content/sound-2.mp3"></audio>
-    <audio id="sound-3" src="_content/sound-3.mp3"></audio>
-    <audio id="sound-4" src="_content/sound-4.mp3"></audio>
-    <audio id="sound-5" src="_content/sound-5.mp3"></audio>
-    <audio id="sound-6" src="_content/sound-6.mp3"></audio>
+    <header>
+      <div class="header-container">
+        <div class="logo-container">
+          <h1>Viviendo una vida simple</h1>
+          <h2>Sólo pido que no me molesten.</h2>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <article>
+        <section class="article-header">
+          <h1>Razones por las que el frio es mucho mejor que el calor.</h1>
+          <h3></h3>
+        </section>
+        <figure>
+          <img src="_images/doggy.jpg" alt="" />
+          <time datetime="2022-08-04"> August 04, 2022 | 3 comments </time>
+          <p class="author">By: Luis Guaiquirian</p>
+          <div class="reproductor">
+            <audio class="sound-1" src="/_content/Pruebita.mp3"></audio>
+            <button class="btn btnPlay"><i class="fas fa-play"> </i> Escuchar artículo</button>
+            <button class="btn btnStop"><i class="fas fa-stop"></i> Detener lectura</button>
+          </div>
+        </figure>
+        <section class="article-text">
+          <p>
+            <span>En estos días en los que en el hemisferio sur están cayendo las palomas asadas por el fuerte calor que estamos viviendo </span>es
+            cuando recuerdo por qué me encanta el invierno. Sí, obvio que es bueno disfrutar de la playa y tomar un poco de sol en verano, pero nada
+            se compara una increíble tarde en la estación más fría.
+          </p>
 
-    <div class="sounds"></div>
+          <h4>Lorem ipsum dolor sit.</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt fugit rerum aliquam similique, eius voluptatem! Architecto sit ut
+            maxime, odio ad <span>possimus est voluptatibus rerum explicabo corporis blanditiis eaque iste velit quas totam nihil</span> non vitae?
+            Sapiente asperiores quae maxime molestiae accusamus! Porro dolorum officiis quia, maxime odit nobis voluptate.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, aspernatur magnam? Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Maxime exercitationem esse obcaecati provident officiis enim commodi quae quos, quibusdam voluptatibus, inventore aliquam ipsa
+            laboriosam quasi consequuntur veritatis aut quis? Nostrum deserunt odio mollitia doloremque, obcaecati fuga in, placeat aperiam,
+            architecto velit maiores perspiciatis saepe.
+          </p>
+        </section>
+      </article>
+      <aside>
+        <div class="sponsors sponsor-1">
+          <div class="sponsor-container">
+            <h3>Sponsors</h3>
+            <img src="/_images/sponsor_png.png" alt="" />
+          </div>
+        </div>
+      </aside>
+    </main>
     <script src="_layout/_javascript/script.js"></script>
   </body>
 </html>

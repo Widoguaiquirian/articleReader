@@ -19,21 +19,15 @@ Last update April XX:  */
 
 html {
   font-size: 62.5%;
-  background: linear-gradient(royalblue, pink);
 }
 
 body {
   font-size: 1.6rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   margin: 0;
-  line-height: 1.6;
-  color: #444;
-  flex-wrap: wrap;
-  display: flex;
+  width: 100%;
   height: 100vh;
-  overflow: hidden;
-  justify-content: center;
-  align-items: center;
+  line-height: 1.8;
 }
 
 ul,
@@ -49,30 +43,268 @@ a {
   font-size: 1.6rem;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  position: relative;
+  padding: 3rem 0;
+  background-color: #444;
+  margin-bottom: 2rem;
+}
+
+.header-container {
+  width: 80%;
+  margin: auto;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-container h1 {
+  color: rgb(34, 198, 176);
+  letter-spacing: 2px;
+  font-size: 3.5rem;
+  font-style: italic;
+  font-family: 'Raleway', sans-serif;
+}
+
+.header-container h2 {
+  font-weight: 300;
+}
+
+nav ul {
+  display: flex;
+  text-transform: uppercase;
+}
+
+nav ul li {
+  margin: 0 2rem;
+  position: relative;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 2rem;
+  transition: all 0.4s ease;
+}
+
+nav ul li a:hover {
+  color: rgb(34, 198, 176);
+  transform: scale(2);
+}
+
+main {
+  display: flex;
+  padding: 2rem 10rem;
+  flex-direction: row;
+}
+
+article {
+  flex: 70%;
+}
+
+article figure {
+  width: 100%;
+  height: 280px;
+  margin: 0 0 15rem 0;
+  padding: 0;
+}
+
+article figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 12%;
+}
+
+article h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+article time {
+  color: rgba(68, 68, 68, 0.709);
+  font-size: 1.2rem;
+  display: block;
+}
+
+article .author {
+  margin: 0;
+  color: #444;
+  font-size: 1.3rem;
+  text-decoration: underline;
+  cursor: pointer;
+  display: inline;
+}
+
+.reproductor {
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
 .btn {
-  background-color: rgba(102, 51, 153, 0.473);
+  background-color: rgba(102, 51, 153, 0.877);
   border-radius: 10px;
   border: none;
   color: white;
   outline: none;
+  font-size: 1.3rem;
   text-transform: uppercase;
-  padding: 1rem;
-  cursor: pointer;
+  padding: 0.6rem 1rem;
   font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
   margin: 1rem;
   text-align: center;
-  letter-spacing: 1px;
 }
 
 .btn:active,
-.btn:focus {
-  background-color: azure;
-  background-color: rgba(102, 51, 153, 0.877);
+.btn:focus,
+.btn:hover {
+  background-color: rgba(117, 9, 225, 0.877);
 }
 
-.sounds {
+.article-text span {
+  color: #444;
+  font-weight: bold;
+}
+
+aside {
+  flex: 30%;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sponsors {
+  background-color: rgba(68, 68, 68, 0.992);
+  width: 20rem;
+  margin: 4rem 0;
+  display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
+}
+
+.sponsors h3 {
+  color: rgb(34, 198, 176);
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.sponsor-container {
+  padding: 1rem;
+  background-color: white;
+  width: 95%;
+  height: 95%;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.sponsor-container img {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 1rem 0;
+  }
+
+  .header-container {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo-container h1 {
+    text-align: center;
+    font-size: 2.3rem;
+  }
+
+  .logo-container h2 {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+
+  nav ul {
+    margin: 1rem 0 0 0;
+  }
+
+  nav ul li {
+    margin: 1rem;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  article {
+    padding: 0 1rem;
+    flex: 100%;
+  }
+
+  article h1 {
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+    line-height: 4rem;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  aside {
+    flex: 100%;
+  }
+
+  .sponsors {
+    background-color: rgba(68, 68, 68, 0.992);
+    width: 95%;
+    margin: 2rem 0;
+    height: 220px;
+  }
+
+  .sponsors h3 {
+    font-size: 1.5rem;
+  }
+
+  .sponsor-container {
+    padding: 1rem;
+    background-color: white;
+    width: 97%;
+  }
+
+  .sponsor-container img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    object-position: 50% 61%;
+  }
+
+  .reproductor {
+    display: flex;
+  }
+
+  .reproductor .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn i {
+    font-size: 2rem;
+  }
 }
